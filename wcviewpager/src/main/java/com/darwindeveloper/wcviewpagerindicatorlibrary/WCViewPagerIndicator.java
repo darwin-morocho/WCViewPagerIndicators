@@ -77,6 +77,7 @@ public class WCViewPagerIndicator extends LinearLayout {
 
     /**
      * aplica el adapter a nuestro viewpager
+     *
      * @param pagerAdapter
      */
     public void setAdapter(PagerAdapter pagerAdapter) {
@@ -88,7 +89,14 @@ public class WCViewPagerIndicator extends LinearLayout {
             indicators.add(new Indicator("" + (i + 1)));
         }
 
-        indicadorAdapter = new IndicadorAdapter(context, indicators, indicatorsColor, indicatorSelectedColor, numbersColor, showNumbers,numberSeletedColor);
+        indicadorAdapter = new IndicadorAdapter(context, indicators, indicatorsColor, indicatorSelectedColor, numbersColor, showNumbers, numberSeletedColor);
+        indicadorAdapter.setOnIndicatorClickListener(new IndicadorAdapter.OnIndicatorClickListener() {
+            @Override
+            public void onIndicatorClick(int position) {
+                viewPager.setCurrentItem(position);
+                setSelectedindicator(position);
+            }
+        });
         recyclerViewIndicators.setAdapter(indicadorAdapter);
 
     }

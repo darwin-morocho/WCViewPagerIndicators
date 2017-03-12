@@ -38,7 +38,7 @@ public class IndicadorAdapter extends RecyclerView.Adapter<IndicadorAdapter.IVie
     }
 
     @Override
-    public void onBindViewHolder(IViewHolder holder, int position) {
+    public void onBindViewHolder(IViewHolder holder, final int position) {
 
         Indicator indicator = indicators.get(position);
 
@@ -56,6 +56,13 @@ public class IndicadorAdapter extends RecyclerView.Adapter<IndicadorAdapter.IVie
         } else {
             holder.indicator.setText(" ");
         }
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onIndicatorClickListener.onIndicatorClick(position);
+            }
+        });
 
 
     }
@@ -75,5 +82,16 @@ public class IndicadorAdapter extends RecyclerView.Adapter<IndicadorAdapter.IVie
             indicator = (CircularTextView) itemView.findViewById(R.id.indicator);
 
         }
+    }
+
+
+    public interface OnIndicatorClickListener {
+        void onIndicatorClick(int position);
+    }
+
+    private OnIndicatorClickListener onIndicatorClickListener;
+
+    public void setOnIndicatorClickListener(OnIndicatorClickListener onIndicatorClickListener) {
+        this.onIndicatorClickListener = onIndicatorClickListener;
     }
 }
