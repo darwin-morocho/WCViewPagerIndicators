@@ -18,7 +18,7 @@ repositories {
 }
 
 dependencies {
-       compile 'com.github.MorochoRochaDarwin:WCViewPagerIndicators:1.0'
+       compile 'com.github.MorochoRochaDarwin:WCViewPagerIndicators:2.0'
 }
 ```
 
