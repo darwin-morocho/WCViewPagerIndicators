@@ -18,15 +18,17 @@ public class IndicadorAdapter extends RecyclerView.Adapter<IndicadorAdapter.IVie
     private ArrayList<Indicator> indicators;
     private int colorIndicator, colorSelectedIndicator, textColor;
     private boolean showNums;
+    private int numberSelectedColor;
 
     public IndicadorAdapter(Context context, ArrayList<Indicator> indicators,
-                            int colorIndicator, int colorSelectedIndicator, int textColor, boolean showNums) {
+                            int colorIndicator, int colorSelectedIndicator, int textColor, boolean showNums, int numberSelectedColor) {
         this.context = context;
         this.indicators = indicators;
         this.colorIndicator = colorIndicator;
         this.colorSelectedIndicator = colorSelectedIndicator;
         this.textColor = textColor;
         this.showNums = showNums;
+        this.numberSelectedColor = numberSelectedColor;
     }
 
     @Override
@@ -39,12 +41,14 @@ public class IndicadorAdapter extends RecyclerView.Adapter<IndicadorAdapter.IVie
     public void onBindViewHolder(IViewHolder holder, int position) {
 
         Indicator indicator = indicators.get(position);
-        holder.indicator.setTextColor(textColor);
+
 
         if (indicator.isSelected()) {
             holder.indicator.setCircleColor(colorSelectedIndicator);
+            holder.indicator.setTextColor(numberSelectedColor);
         } else {
             holder.indicator.setCircleColor(colorIndicator);
+            holder.indicator.setTextColor(textColor);
         }
 
         if (showNums) {

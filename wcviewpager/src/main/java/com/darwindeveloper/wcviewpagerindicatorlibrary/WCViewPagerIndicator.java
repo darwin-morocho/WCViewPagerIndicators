@@ -31,7 +31,7 @@ public class WCViewPagerIndicator extends LinearLayout {
 
 
     private boolean showNumbers;
-    private int indicatorsColor, indicatorSelectedColor, numbersColor;
+    private int indicatorsColor, indicatorSelectedColor, numbersColor, numberSeletedColor;
 
     public WCViewPagerIndicator(Context context) {
         super(context);
@@ -50,6 +50,7 @@ public class WCViewPagerIndicator extends LinearLayout {
             indicatorsColor = a.getColor(R.styleable.WCViewPagerIndicator_indicatorsColor, Color.parseColor("#0099cc"));
             indicatorSelectedColor = a.getColor(R.styleable.WCViewPagerIndicator_indicatorSelectedColor, Color.parseColor("#FF093896"));
             numbersColor = a.getColor(R.styleable.WCViewPagerIndicator_numbersColor, Color.parseColor("#ffffff"));
+            numberSeletedColor = a.getColor(R.styleable.WCViewPagerIndicator_numberSelectedColor, Color.parseColor("#ffffff"));
             showNumbers = a.getBoolean(R.styleable.WCViewPagerIndicator_showNumbers, true);
 
         } finally {
@@ -87,7 +88,7 @@ public class WCViewPagerIndicator extends LinearLayout {
             indicators.add(new Indicator("" + (i + 1)));
         }
 
-        indicadorAdapter = new IndicadorAdapter(context, indicators, indicatorsColor, indicatorSelectedColor, numbersColor, showNumbers);
+        indicadorAdapter = new IndicadorAdapter(context, indicators, indicatorsColor, indicatorSelectedColor, numbersColor, showNumbers,numberSeletedColor);
         recyclerViewIndicators.setAdapter(indicadorAdapter);
 
     }

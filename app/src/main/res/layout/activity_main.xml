@@ -10,6 +10,10 @@
         android:id="@+id/wcviewpager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:indicatorSelectedColor="@color/colorAccent" />
+        app:indicatorSelectedColor="@color/colorPrimary"
+        app:indicatorsColor="#d2d2d2"
+        app:numberSelectedColor="#fff"
+        app:numbersColor="@color/colorPrimary"
+        app:showNumbers="true" />
 
 </LinearLayout>

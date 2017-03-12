@@ -8,6 +8,7 @@
         <attr name="indicatorsColor" format="color" />
         <attr name="indicatorSelectedColor" format="color" />
         <attr name="numbersColor" format="color" />
+        <attr name="numberSelectedColor" format="color" />
         <attr name="showNumbers" format="boolean" />
     </declare-styleable>
 </resources>
