@@ -69,8 +69,8 @@ public class WCViewPagerIndicator extends LinearLayout {
 
 
     private void init() {
-        viewPager = (WrapContentViewPager) findViewById(R.id.viewpager);
-        recyclerViewIndicators = (RecyclerView) findViewById(R.id.recyclerview);
+        viewPager = (WrapContentViewPager) findViewById(R.id.wrap_content_viewpager);
+        recyclerViewIndicators = (RecyclerView) findViewById(R.id.recyclerviewIndicators);
         recyclerViewIndicators.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
     }
 

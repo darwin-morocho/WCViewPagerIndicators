@@ -1,5 +1,5 @@
 # WCViewPagerIndicators
-Es una libreria android que permite a los desarrolladores tener un viewpager con el atributo layout_height="wrap_content", ademas  de incluir en la parte inferiro un indicador de paginas (API 16 o superior)..
+Es una libreria android que permite a los desarrolladores tener un viewpager con el atributo layout_height="wrap_content", ademas  de incluir en la parte inferior un indicador de paginas (API 16 o superior)..
 
 ##Live demo
 usted puede ver una aplicacion demo en el siguiente enlace https://appetize.io/app/3ee65vjy0rkn8p3xph7aytbh4g
