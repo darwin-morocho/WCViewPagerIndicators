@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularTextView">
+        <attr name="circleColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="WCViewPagerIndicator">
+        <attr name="indicatorsColor" format="color" />
+        <attr name="indicatorSelectedColor" format="color" />
+        <attr name="numbersColor" format="color" />
+        <attr name="numberSelectedColor" format="color" />
+        <attr name="showNumbers" format="boolean" />
+    </declare-styleable>
+</resources>
