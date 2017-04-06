@@ -11,6 +11,7 @@ usted puede ver una aplicacion demo en el siguiente enlace https://appetize.io/a
 
 ##Instalación
 #Instalación
+Este proyecto fue modificado y mejorado en (ingrese con su cuenta de google para observar la demo) https://github.com/MorochoRochaDarwin/mr-teacher
 en su archivo /app/build.gradle
 ```
 repositories {
