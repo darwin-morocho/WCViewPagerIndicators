@@ -1,25 +1,23 @@
 # WCViewPagerIndicators
 Es una libreria android que permite a los desarrolladores tener un viewpager con el atributo layout_height="wrap_content", ademas  de incluir en la parte inferior un indicador de paginas (API 16 o superior)..
 
-##Live demo
+## Live demo
 
 usted puede ver una aplicacion demo en el siguiente enlace https://appetize.io/app/3ee65vjy0rkn8p3xph7aytbh4g
 
-##Capturas de pantalla
+## Capturas de pantalla
 
 | demo 1 | demo 2 | demo 3 |
 | --- | --- | --- |
 | ![](https://cloud.githubusercontent.com/assets/15864336/23829170/144e0a5a-06b8-11e7-86d5-f7c787eb7678.png) | ![](https://cloud.githubusercontent.com/assets/15864336/23829171/14816774-06b8-11e7-8c20-e4c64f2dfb3b.png) | ![](https://cloud.githubusercontent.com/assets/15864336/23829172/14863d58-06b8-11e7-9e51-dd3793528bc7.png) |
 
 
-##Instalación
+## Instalación
 Este proyecto fue modificado y mejorado en (ingrese con su cuenta de google para observar la demo) https://github.com/MorochoRochaDarwin/mr-teacher
 
 IMporte el modulo de la libreria a su proyecto android
 
-```
-
-##Agregar la vista a su Layout
+## Agregar la vista a su Layout
 ```xml
   <com.darwindeveloper.wcviewpager.WCViewPagerIndicator
           android:id="@+id/wcviewpager"
@@ -27,7 +25,8 @@ IMporte el modulo de la libreria a su proyecto android
           android:layout_height="wrap_content"
          />
 ```
-###Diseño completo
+
+### Diseño completo
 ```xml
   <com.darwindeveloper.wcviewpager.WCViewPagerIndicator
         android:id="@+id/wcviewpager"
@@ -41,7 +40,7 @@ IMporte el modulo de la libreria a su proyecto android
 
 ```
 
-#En sus Actividades o Fragments
+# En sus Actividades o Fragments
 Inicialice la vista y capture los cambios en el viewpager
 ```java
  //inicializamos la vista
